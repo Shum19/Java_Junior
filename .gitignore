@@ -33,7 +33,7 @@ build/
 gradle/
 gradlew
 gradlew.bat
-/src/main/resources
-/src/main/java/ru
+src/main/resources/hibernate.cfg.xml
+src/main/java/ru
 
 
