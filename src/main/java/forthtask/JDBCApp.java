@@ -2,7 +2,7 @@ package forthtask;
 
 import java.sql.SQLException;
 
-public class MainApp {
+public class JDBCApp {
     public static void main(String[] args) throws SQLException {
         ConnectionDataBase connectionDataBase = new ConnectionDataBase();
         // Вывод баз данных
