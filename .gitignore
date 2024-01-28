@@ -33,7 +33,9 @@ build/
 gradle/
 gradlew
 gradlew.bat
+src/main/java/ru/geekbrains/junior/lesson4/models/Student.java
+src/main/java/ru/geekbrains/junior/lesson4/task1/Program.java
+src/main/java/ru/geekbrains/junior/lesson4/task2/Program.java
 src/main/resources/hibernate.cfg.xml
-src/main/java/ru
 
 
