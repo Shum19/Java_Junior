@@ -15,6 +15,7 @@ public class ClientManager implements Runnable {
         while (socket.isConnected()){
             try {
                 messageFromClient = br.readLine();
+                // Для отображения информации, что пользователь покинул чат.
                 if (messageFromClient == null){
                     closeAll(socket, br, bw);
                     break;
