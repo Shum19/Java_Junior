@@ -35,7 +35,7 @@ public class Client {
     }
     public void listenMessage(){
         new Thread(new Runnable(){
-            String message;
+
             @Override
             public void run() {
                 String message;

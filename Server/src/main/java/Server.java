@@ -1,6 +1,7 @@
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.Scanner;
 
 public class Server {
     private final ServerSocket serverSocket;
@@ -9,20 +10,22 @@ public class Server {
     }
     public void runServer(){
         try {
-            while (!serverSocket.isClosed()){
+            while (!serverSocket.isClosed()) {
                 Socket socket = serverSocket.accept();
                 System.out.println("New client has joined");
                 ClientManager clientManager = new ClientManager(socket);
                 Thread thread = new Thread(clientManager);
                 thread.start();
+
             }
+
         }catch (IOException e){
             closeSocket();
         }
 
     }
 
-    private void closeSocket() {
+    public void closeSocket() {
         try {
             if (serverSocket != null){
                 serverSocket.close();

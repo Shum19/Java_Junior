@@ -11,7 +11,7 @@ public class ClientApp {
         System.out.println("Type your name: ");
         String name = scanner.nextLine();
 
-        try (Socket socket = new Socket(address, 8888);) {
+        try (Socket socket = new Socket(address, 8882);) {
             Client client = new Client(socket, name);
 
             InetAddress inetAddress = socket.getInetAddress();
